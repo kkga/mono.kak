@@ -29,7 +29,7 @@ declare-option str errorred          "rgb:ff2040"
 
 # CODE
 
-set-face global value                "%opt{teal}"
+set-face global value                "%opt{purple}"
 set-face global type                 "%opt{white}"
 set-face global variable             "%opt{white}"
 set-face global module               "%opt{white}"
@@ -38,7 +38,7 @@ set-face global string               "%opt{greyblue}"
 set-face global keyword              "%opt{white}+d"
 set-face global operator             "%opt{white}"
 set-face global attribute            "%opt{white}"
-set-face global comment              "%opt{green}+bi"
+set-face global comment              "%opt{green}+i"
 set-face global documentation        "%opt{brightblack}+b"
 set-face global meta                 "%opt{white}"
 set-face global builtin              "%opt{white}"
@@ -67,51 +67,51 @@ set-face global SecondaryCursorEol   "%opt{black},%opt{brblack}+fg"
 set-face global MenuForeground       "%opt{black},%opt{diffpink}"
 set-face global MenuBackground       "%opt{white},%opt{uiblack}"
 set-face global MenuInfo             "%opt{brightblack}"
-set-face global Information          "%opt{white},%opt{uiblack}"
-set-face global Error                "%opt{errorred},%opt{black}+rb"
+set-face global Information          "%opt{white},%opt{yasogrey}"
+set-face global Error                "%opt{brightwhite},%opt{diffred}+b"
 
-set-face global StatusLine           "%opt{white},%opt{yasogrey}+bd"
+set-face global StatusLine           "%opt{white},%opt{yasogrey}"
 set-face global StatusLineInfo       "%opt{uiblue}"
-set-face global StatusLineMode       "%opt{black},%opt{uiblue}"
-set-face global StatusLineValue      "%opt{black},%opt{uiblue}"
-set-face global StatusCursor         "%opt{black},%opt{uiblue}"
-set-face global Prompt               "%opt{black},%opt{uiteal}"
+set-face global StatusLineMode       "%opt{black},%opt{diffblue}"
+set-face global StatusLineValue      "%opt{black},%opt{diffblue}"
+set-face global StatusCursor         "%opt{black},%opt{diffblue}"
+set-face global Prompt               "%opt{black},%opt{diffblue}"
 
 set-face global LineNumbers          "%opt{linenrblack}"
 set-face global LineNumbersWrapped   "%opt{linenrblack}"
 set-face global LineNumberCursor     "%opt{brightblack}"
 
 set-face global BufferPadding        "%opt{uiblack}"
-set-face global Whitespace           "%opt{uiblack}"
+set-face global Whitespace           "%opt{uiblack}+f"
 set-face global WrapMarker           Whitespace
-set-face global MatchingChar         "%opt{uipink},%opt{uiblack}+bF"
+set-face global MatchingChar         "%opt{black},%opt{diffpink}+bF"
 
 # EXTRA FACES
 
 # kak-lsp
- set-face global DiagnosticError           "%opt{errorred},%opt{black}+rb"
- set-face global DiagnosticWarning         "%opt{uiamber},%opt{black}+rb"
- set-face global DiagnosticHint            Information
- set-face global DiagnosticInfo            Information
- set-face global LineFlagError             "%opt{errorred}"
- set-face global LineFlagWarning           "%opt{uiamber}"
- set-face global LineFlagHint              "%opt{uiblue}"
- set-face global LineFlagInfo              "%opt{uiblue}"
-# set-face global Reference                 "default,%opt{bg_ref}"
-# set-face global ReferenceBind             +bu@Reference
-# set-face global InfoDefault               Information
-# set-face global InfoBlock                 block
-# set-face global InfoBlockQuote            block
-# set-face global InfoBullet                bullet
-# set-face global InfoHeader                header
-# set-face global InfoLink                  link
-# set-face global InfoLinkMono              header
-# set-face global InfoMono                  mono
-# set-face global InfoRule                  comment
-# set-face global InfoDiagnosticError       "%opt{brred}"
-# set-face global InfoDiagnosticHint        "%opt{brblue}"
-# set-face global InfoDiagnosticInformation Information
-# set-face global InfoDiagnosticWarning     "%opt{bryellow}"
+set-face global DiagnosticError           "%opt{brightwhite},%opt{diffred}+Fb"
+set-face global DiagnosticWarning         "%opt{uiamber}+Fb"
+set-face global DiagnosticHint            "%opt{uilime}+Fb"
+set-face global DiagnosticInfo            "%opt{uiblue}+Fb"
+set-face global LineFlagError             "%opt{errorred}"
+set-face global LineFlagWarning           "%opt{uiamber}"
+set-face global LineFlagHint              "%opt{uilime}"
+set-face global LineFlagInfo              "%opt{uilime}"
+set-face global Reference                 MatchingChar
+set-face global ReferenceBind             +bu@Reference
+set-face global InfoDefault               Information
+set-face global InfoBlock                 block
+set-face global InfoBlockQuote            block
+set-face global InfoBullet                bullet
+set-face global InfoHeader                header
+set-face global InfoLink                  link
+set-face global InfoLinkMono              header
+set-face global InfoMono                  mono
+set-face global InfoRule                  comment
+set-face global InfoDiagnosticError       "%opt{errorred}"
+set-face global InfoDiagnosticHint        "%opt{uilime}"
+set-face global InfoDiagnosticInformation Information
+set-face global InfoDiagnosticWarning     "%opt{uiamber}"
 
 # # ui.kak (https://github.com/kkga/ui.kak)
 set-face global Search                    "%opt{brightwhite}+iu"
